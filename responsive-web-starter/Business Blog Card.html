@@ -17,12 +17,29 @@
 
           .cardbody {
             border-radius: 0px;
-            padding: 20px;
+            padding: 30px;
+            margin-top: 0px;
           }
 
         .rounded-image {
-            border-radius: 10px;
-            margin-bottom: 16px;
+            border-radius: 20px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+            border: 10px;
+          }
+
+        .img2 {
+            vertical-align: middle;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            box-shadow: 0 0 1px 5px rgba(0, 0, 0, 0.09);
+            object-fit: cover;
+            margin-left: 0px;
+            margin-top: 25px;
+            margin-bottom: 5px;
+            
+
           }
 
           body {
@@ -30,68 +47,70 @@
             padding-top: 164px;
 
           }
-        
-        .p1 {
-            display: inline-block;
-            font-size: 0.625rem;
-            text-align: left; 
-            border-radius: 20px;
-            background-color: #E6D6FC;
-            color: #883AE1;
-            font-weight: bold;
-            padding-left: 16px;
-            padding-right: 16px;
-            padding-top: 6px;
-            padding-bottom: 6px;
-            margin-bottom: 20px;
-            margin-right: 270px;
-        }
 
         .p2 {
             text-align: left; 
-            font-size:1rem;
-            margin-bottom: 20px;
-            color: #6C727F;
+            font-size: 1rem;
+            margin-bottom: 25px;
+            color: #677489;
         }
 
         .p3 {
-            margin-top: 20px;
-            margin-bottom: 0px;
             text-align: left; 
-            font-size:1rem;
-            color: #6C727F;
+            font-size:0.8rem;
+            margin-bottom: 5px;
+            color: #677489;
+            padding-top: 24px;
+            padding-left: 15px;
         }
-
+        .p4 {
+            text-align: left; 
+            font-size:0.8rem;
+            margin-bottom: 20px;
+            color: #677489;
+        }
         h5 {
             text-align: left; 
             font-size:1.5rem;
-            margin-bottom: 6px;
+            margin-bottom: 10px;
+            margin-top: -28px;
+            
         }
-
-        .card-footer{
+        .black-text {
+            color: black;
+            font-weight: bold;
+            font-size:1rem;
+          }
+          
+          .card-footer{
             border: 1px solid #E5EAF0; 
-            margin: 1rem -1rem;
+            margin: 1rem -2rem;
             margin-top: 0rem;
             margin-bottom: 0rem;
-            width: calc(100% + 2rem);
+            width: calc(100% + 4rem);
+
         }
+        .container {
+            display: flex;
+          }
         </style>
 </head>
 <body>
 
         <div align="center">            
-            
             <div class="card11">
-            <img src="hero.png" class="card-img-top rounded-image" alt="wallpaper">
+            <img src="hero3.png" class="card-img-top rounded-image" alt="wallpaper">
             <div class="cardbody">
                 <h5>Perfect solution for small business</h5>
                 <p class="p2">Small businesses need to generate leads to grow. You can use tools like Ringy.</p>
-                <!-- <hr class="line"> -->
-                <div class="card-footer"> </div>
-                    <p class="p3">Annie Spratt</p>
+                    <div class="card-footer"> </div>
+                        <div class="container">    
+                            <img src="avatar.png" class ="img2" alt="avatar"><p class="p3">
+                                <span class="black-text">Amy Burgess</span><br>Customer Manger, Solution Oy</p>
+                        </div>
+               
                 </div> 
             </div>
-            
         </div>
             
 </body>
