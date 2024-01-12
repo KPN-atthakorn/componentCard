@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./style.css"  />
+  <script type="text/javascript" src="app.js"></script>
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+</head>
+<body>
+  <main>
+    <section class="artwork">
+      <picture class="artwork__image--top">
+        <source srcset="./images/illustration-woman-online-desktop.svg" media="(min-width: 381px)">
+        <source srcset="./images/illustration-woman-online-mobile.svg" media="(max-width:380px)">
+        <img class="artwork__image--topStyle" src="./images/illustration-box-desktop.svg" alt="">
+      </picture>
+      <picture class="artwork__image--bottom">
+        <source srcset="./images/bg-pattern-desktop.svg" media="(min-width: 381px)">
+        <source srcset="./images/bg-pattern-mobile.svg" media="(max-width:380px)">
+        <img class="artwork__image--bottomStyle" src="./images/illustration-box-desktop.svg" alt="">
+      </picture>
+    </section>
+    <picture class="artwork__image--middle">
+      <source srcset="./images/illustration-box-desktop.svg" media="(min-width: 381px)">
+      <img class="artwork__image--middleStyle" src="./images/illustration-box-desktop.svg" alt="">
+    </picture>
+    <section class="content">
+      <h1 class="content__summary--highlight content__header">FAQ</h1>
+      <div class="content--separator">
+        <button aria-expanded="false" role="button" class="content__info--button" id="content__info--invite" onclick="clickInvite('content__summary--invite', 'openInvite', 'content__info--invite', 'image__invite--rotate')"> 
+          <span for="content__info--invite" class="content__info--collapse">How many team members can I invite?</span>
+          <img src="./images/icon-arrow-down.svg" id="image__invite--rotate" class="content__info--click" alt="" />
+        </button>
+        <div role="region" aria-labelledby="content__info--invite" class="content__summary--hide" id="content__summary--invite">
+          <p class="content__summary">You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</p>
+        </div>
+      </div>
+      <div class="content--separator">
+        <button aria-expanded="false" role="button" class="content__info--button" class="content__info" id="content__info--maxSize" onclick="clickInvite('content__summary--maxSize', 'openMaxFileSize','content__info--maxSize', 'image__maxSize--rotate')">
+          <span for="content__info--maxSize" class="content__info--collapse">What is the maximum file upload size?</span>
+          <img src="./images/icon-arrow-down.svg" id="image__maxSize--rotate" class="content__info--click" alt="" />
+        </button>
+        <div role="region" aria-labelledby="content__info--maxSize" class="content__summary--hide" id="content__summary--maxSize">
+          <p class="content__summary">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+        </div>
+      </div>
+      <div class="content--separator">
+        <button aria-expanded="false" role="button" class="content__info--button" id="content__info--resetPwd" onclick="clickInvite('content__summary--resetPwd', 'openResetPwd', 'content__info--resetPwd', 'image__resetPwd--rotate')">
+          <span for="content__info--resetPwd" class="content__info--collapse">How do I reset my password?</span>
+          <img src="./images/icon-arrow-down.svg" id="image__resetPwd--rotate" class="content__info--click" alt="" />
+        </button>
+        <div role="region" aria-labelledby="content__info--resetPwd" class="content__summary--hide" id="content__summary--resetPwd">
+          <p class="content__summary">Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.</p>
+        </div>
+      </div>
+      <div class="content--separator">
+        <button aria-expanded="false" role="button" class="content__info--button" id="content__info--cancel" onclick="clickInvite('content__summary--cancel', 'openCancel', 'content__info--cancel', 'image__cancel--rotate')">
+          <span for="content__info--cancel" class="content__info--collapse">Can I cancel my subscription?</span>
+          <img src="./images/icon-arrow-down.svg" id="image__cancel--rotate" class="content__info--click" alt="" />
+        </button>
+        <div role="region" aria-labelledby="content__info--cancel" class="content__summary--hide" id="content__summary--cancel">
+          <p class="content__summary">Yes! Send us a message and we’ll process your request no questions asked.</p>
+        </div>
+      </div>
+      <div class="content--separator">
+        <button aria-expanded="false" role="button" class="content__info--button" id="content__info--support" onclick="clickInvite('content__summary--support', 'openSupport', 'content__info--support', 'image__support--rotate')">
+          <span for="content__info--support" class="content__info--collapse">Do you provide additional support?</span>
+          <img src="./images/icon-arrow-down.svg" id="image__support--rotate" class="content__info--click" alt="" />
+        </button>
+        <div role="region" aria-labelledby="content__info--support" class="content__summary--hide" id="content__summary--support">
+          <p class="content__summary">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
