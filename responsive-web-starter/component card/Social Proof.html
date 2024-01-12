@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
+    <title>Social proof</title>
+    <style>
+        :root {
+            --Very-Dark-Magenta: hsl(300, 43%, 22%);
+            --Soft-Pink: hsl(335, 43%, 95%);
+            --Medium-Pink: hsl(333, 80%, 67%);
+            --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+            --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+            --White: hsl(0, 0%, 100%);
+          }
+        
+          body{
+              margin: 0;
+              font-size: 15px;
+          }
+          main {
+            height: 100vh;
+            width: 100vw;
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Spartan', sans-serif;
+            background-color: var(--White);        
+          }
+        
+          .top__content, .lower__content {
+            margin: 0 20px;
+          }
+        
+          .top__content {
+            display: flex;
+            flex-direction: column;
+            /*flex: .5;*/
+          }
+        
+          h1 {
+            text-align: center;
+            margin:0 50px;
+            padding-top: 10px;
+            color: var(--Very-Dark-Magenta);
+            font-weight: 700;
+            font-size: xx-large;
+          }
+          .topContent__CTA, .topContent__rating {
+            flex: 1;
+          }
+          .topContent {
+              color: var(--Dark-Grayish-Magenta);
+              text-align: center;
+          }
+          .rating-container {
+            background-color: var(--Soft-Pink);
+            text-align: center;
+            margin: 10px 0;
+            padding: 10px 0;
+            color: var(--Very-Dark-Magenta);
+            font-weight: 700;
+          }
+        
+          .rating-stars {
+            flex:1;
+          }
+          .star{
+            width: 15px;
+            height: 15px;
+          }
+        
+          .card-container {
+              background-color: var(--Very-Dark-Magenta);
+              padding: 20px;
+              margin: 15px 0;
+              border-radius: 10px;
+          }
+        
+          .card__upperHalf {
+            display: flex;
+          }
+        
+          .card-image {
+              height: 10vh;
+              display: flex;
+              align-items: center;
+          }
+        
+          .imagestype {
+              border-radius: 45px;
+              min-height: 40px;
+                max-height: 5vh;
+          }
+        
+          .cardProfile {
+              display: flex;
+              flex-direction: column;
+              margin-left: 10px;
+              justify-content: center;
+          }
+        
+          .cardProfile_name {
+              color: var(--Light-Grayish-Magenta)
+          }
+        
+          .cardProfile_job {
+              color: var(--Medium-Pink);
+          }
+        
+          .card_content {
+              color: var(--Light-Grayish-Magenta);
+              margin: 0px;
+          }
+        
+        
+          @media only screen and (min-width: 600px) {
+            main {
+              margin: 40px auto;
+            }
+            .top__content {
+              flex-direction: row;
+            }
+            .top__content, .lower__content {
+                margin: 0 10px;
+            }
+            h1, .topContent {
+                text-align: left;
+                margin: 0;
+                padding-right: 5vw;
+            }
+        
+            h1 {
+                margin-bottom: 20px;
+                font-size:xxx-large;
+            }
+            .rating-container {
+                width: 80%;
+                display: flex;
+                align-content: center;
+            }
+            .rating_content {flex:1;}
+            .topContent__rating {
+                display: flex;
+                flex-direction: column;
+        
+            }
+            .review-top {
+                align-self: flex-start;
+            }
+            .review-center {
+                align-self: center;
+            }
+            .review-bottom {
+                align-self: flex-end;
+            }
+        
+            .lower__content {
+                display: flex;
+                justify-content: space-around;
+                margin-top: 40px;
+                min-height: 330px;
+            }
+        
+            .card-container {
+                margin: 0 10px;
+                flex: 1;
+                height :275px;
+            }
+        
+            .top-card {
+              align-self: flex-start;
+            }
+        
+            .middle-card {
+              align-self: flex-start;
+              margin-top: 10px;
+            }
+        
+            .bottom-card {
+              align-self: flex-start;
+              margin-top: 20px;
+            }
+        
+          }
+        
+          @media only screen and (min-width: 700px) {
+            .card-container {
+                height: 260px;
+            }
+          }
+        
+          @media only screen and (min-width: 800px){
+            .lower__content {
+              min-height: 300px;
+            }
+            .card-container {
+              height: 220px;
+            }
+            
+          }
+        
+          @media only screen and (min-width: 900px) {
+            main {
+              width: 90vw;
+            }
+          }
+        
+          @media only screen and (min-width: 1100px) {
+            main {
+                width: 85vw;
+            }
+            .card-container {
+              height: 210px;
+            }
+          }
+        
+          @media only screen and (min-width: 1300px) {
+            main {
+              width: 80vw;
+            }
+            .card-container {
+              height: 205px;
+          }
+        
+          @media only screen and (min-width: 1600px) {
+            main {
+              width: 70vw;
+            }
+            .card-container {
+              height: 225px;
+            }
+          }
+        }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="top__content">
+        <div class="topContent__CTA">
+          <h1>10,000+ of our users love our products.</h1>
+          <p class="topContent">We only provide great products combined with excellent customer service.
+            See what our satisfied customers are saying about our services.</p>
+        </div>
+        <div class="topContent__rating">
+          <div class="rating-container">
+            <div class="rating-stars review-top">
+              <img class="star" src="star.png" alt="icon-star" />
+              <img class="star" src="star.png" alt="icon-star" />
+              <img class="star" src="star.png" alt="icon-star" />
+              <img class="star" src="star.png" alt="icon-star" />
+              <img class="star" src="star.png" alt="icon-star" />
+            </div>
+            <strong class="rating_content">
+              Rated 5 Stars in Reviews
+            </strong>
+          </div>
+          <div class="rating-container review-center">
+            <div class="rating-stars">
+              <img class="star" src="star.png" alt="icon-star" />
+              <img class="star" src="star.png" alt="icon-star" />
+              <img class="star" src="star.png" alt="icon-star" />
+              <img class="star" src="star.png" alt="icon-star" />
+              <img class="star" src="star.png" alt="icon-star" />
+            </div>
+            <strong class="rating_content">
+              Rated 5 Stars in Report Guru
+            </strong>
+          </div>
+          <div class="rating-container review-bottom">
+            <div class="rating-stars">
+              <img class="star" src="star.png" alt="icon-star" />
+              <img class="star" src="star.png" alt="icon-star" />
+              <img class="star" src="star.png" alt="icon-star" />
+              <img class="star" src="star.png" alt="icon-star" />
+              <img class="star" src="star.png" alt="icon-star" />
+            </div>
+            <strong class="rating_content">
+              Rated 5 Stars in BestTech
+            </strong>
+          </div>
+        </div>
+      </section>
+      <section class="lower__content">
+        <figure class="card-container top-card">
+          <div class="card__upperHalf">
+            <div class="card-image">
+              <img src="lego.jpg" class="imagestype" alt="" />
+            </div>
+            <div class="cardProfile">
+              <figcaption class="cardProfile_name">Colton Smith</figcaption>
+              <figcaption class="cardProfile_job">Verified Buyer</figcaption>
+            </div>
+          </div>
+          <div class="card__lowerHalf">
+            <blockquote class="card_content">"We needed the same printed design as the one we had ordered a week prior.
+              Not only did they find the original order, but we also received it in time.
+              Excellent!"</blockquote>
+          </div>
+        </figure>
+        <figure class="card-container middle-card">
+          <div class="card__upperHalf">
+            <div class="card-image">
+              <img src="lego.jpg" class="imagestype" alt="" />
+            </div>
+            <div class="cardProfile">
+              <figcaption class="cardProfile_name">Irene Roberts</figcaption>
+              <figcaption class="cardProfile_job">Verified Buyer</figcaption>
+            </div>
+          </div>
+          <div class="card__lowerHalf">
+            <blockquote class="card_content">"Customer service is always excellent and very quick turn around. Completely
+              delighted with the simplicity of the purchase and the speed of delivery."</blockquote>
+          </div>
+        </figure>
+        <figure class="card-container bottom-card">
+          <div class="card__upperHalf">
+            <div class="card-image">
+              <img src="lego.jpg" class="imagestype" alt="" />
+            </div>
+            <div class="cardProfile">
+              <figcaption class="cardProfile_name">Anne Wallace </figcaption>
+              <figcaption class="cardProfile_job">Verified Buyer</figcaption>
+            </div>
+          </div>
+          <div class="card__lowerHalf">
+            <blockquote class="card_content">"Put an order with this company and can only praise them for the very high
+              standard. Will definitely use them again and recommend them to everyone!"</blockquote>
+          </div>
+        </figure>
+      </section>
+    </main>
+  </body>
+</html>
