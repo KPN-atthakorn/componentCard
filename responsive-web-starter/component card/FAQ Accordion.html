@@ -26,10 +26,10 @@
             padding: 30px
           }
           .image {
-            width: 220px;
-            height: 200px;
-            margin-top: -550px;
-            margin-left: 112px;
+            width: 260px;
+            height: 240px;
+            margin-top: -560px;
+            margin-left: 92px;
           }
           .image0 {
             width: 750px;
@@ -70,15 +70,20 @@
             padding-top: 60px;
             font-size: 3rem;
         }
-        h2{
-          line-height: 1px;
+        h2 {
+          line-height: -50px;
         }
 
         .container {
             display: flex; 
           }
-        .hr{
+        hr{
           line-height: 25px;
+          margin-top: -2px;
+          margin-bottom: 0px;
+        }
+        .accordion-button-bold {
+          font-weight: bold;
         }
         </style>
 </head>
@@ -100,52 +105,52 @@
                       <!-- -------------------------1---------------------------- -->
                       <div class="accordion accordion-flush" id="accordionFlushExample">
                         <div class="accordion-item">
-                          <h2 class="accordion-header" id="flush-headingOne">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapseOne">
+                          <h2 class="accordion-header" id="flush-heading1">
+                            <button class="accordion-button collapsed" onclick="toggleBoldText()" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapseOne">
                               How many team members can I invite?
                             </button>
                           </h2>
-                          <div id="flush-collapse1" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                          <div id="flush-collapse1" class="accordion-collapse collapse" aria-labelledby="flush-heading1" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</div>
                           </div><hr>
                       <!-- -------------------------2---------------------------- -->    
                       <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingOne">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <h2 class="accordion-header" id="flush-heading2">
+                          <button class="accordion-button collapsed" onclick="toggleBoldText()" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapseOne">
                             What is the maximum file upload size?
                           </button>
                         </h2>
-                        <div id="flush-collapse2" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div id="flush-collapse2" class="accordion-collapse collapse" aria-labelledby="flush-heading2" data-bs-parent="#accordionFlushExample">
                           <div class="accordion-body">No more than 2GB. All files in your account must fit your allotted storage space.</div>
                         </div><hr>
                         <!-- -------------------------3---------------------------- -->    
                       <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingOne">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <h2 class="accordion-header" id="flush-heading3">
+                          <button class="accordion-button collapsed" onclick="toggleBoldText()" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapseOne">
                             How do I reset my password?
                           </button>
                         </h2>
-                        <div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush-heading3" data-bs-parent="#accordionFlushExample">
                           <div class="accordion-body">Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.</div>
                         </div><hr>
                         <!-- -------------------------4---------------------------- -->    
                       <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingOne">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <h2 class="accordion-header" id="flush-heading4">
+                          <button class="accordion-button collapsed" onclick="toggleBoldText()" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapseOne">
                             Can I cancel my subscription?
                           </button>
                         </h2>
-                        <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-heading4" data-bs-parent="#accordionFlushExample">
                           <div class="accordion-body">Yes! Send us a message and we’ll process your request no questions asked.</div>
                         </div><hr>
                         <!-- -------------------------5---------------------------- -->    
                       <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingOne">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <h2 class="accordion-header" id="flush-heading5">
+                          <button class="accordion-button collapsed" onclick="toggleBoldText()" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapseOne">
                             Do you provide additional support?
                           </button>
                         </h2>
-                        <div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="flush-heading5" data-bs-parent="#accordionFlushExample">
                           <div class="accordion-body">Chat and email support is available 24/7. Phone lines are open during normal business hours.</div>
                         </div><hr>
 
@@ -161,5 +166,12 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script>
+    function toggleBoldText() {
+      // เพิ่มหรือลบคลาสตัวหนาของปุ่มตามสถานะของ Accordion
+      const button = document.querySelector('.accordion-button');
+      button.classList.toggle('accordion-button-bold');
+    }
+  </script>
 </body>
 </html>
